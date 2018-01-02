@@ -74,7 +74,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
                         editor.putString("userid",eUsername.getText().toString());
                         editor.commit();
                         Toast.makeText(MainActivity.this,"登陆成功",Toast.LENGTH_LONG).show();
-                        Intent i = new Intent(MainActivity.this,uers.class);
+                        Intent i = new Intent(MainActivity.this,userinfo.class);
                         startActivity(i);
                         finish();
                         break;
@@ -167,11 +167,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
                     if(resultConInt == 0){
                         msg.what = 0;
                         mHandler.sendMessage(msg);
-                        return;//如果返回的错误代码为0，说明登陆成功
+                        //return;//如果返回的错误代码为0，说明登陆成功
                     }else{
                         msg.what = 1;
                         mHandler.sendMessage(msg);
-                        return;
+                       // return;
                     }
 
                 }catch (Exception e){

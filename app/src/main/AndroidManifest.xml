@@ -2,6 +2,9 @@
 
     package="cn.edu.pku.zhanglianyue.chooseroom">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,8 +24,7 @@
         <activity android:name=".userinfo"/>
 
         <!--查询空床位的页面 -->
-        <activity android:name=".empty"
-            android:exported="true"/>
+        <activity android:name=".empty" />
 
         <!--选择宿舍界面 -->
         <activity android:name=".chooseroom"/>

@@ -32,7 +32,7 @@
             android:id="@+id/userId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="请输入学号！"
+            android:hint="请输入学号"
             android:inputType="numberSigned"
             />
 
@@ -42,7 +42,7 @@
             android:id="@+id/pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="请输入密码！"
+            android:hint="请输入密码"
             android:layout_below="@id/userId"
             android:inputType="textPassword">
 

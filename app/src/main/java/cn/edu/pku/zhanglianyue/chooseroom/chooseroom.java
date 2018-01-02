@@ -69,6 +69,8 @@ public class chooseroom extends Activity implements View.OnClickListener {
     private Handler building_handler;
     private ImageView top_home_IV;  //返回首页按钮
     private ImageView top_exit_IV;  //退出登录按钮
+    private Button select_check;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -129,7 +131,7 @@ public class chooseroom extends Activity implements View.OnClickListener {
             SelectNum1 = (EditText)findViewById(R.id.select_selectNum) ;
             SelectBuilding1 = (EditText) findViewById(R.id.select_building_input);
             SelectNum = Integer.parseInt(SelectNum1.getText().toString());
-            SelectBuilding = Integer.parseInt(SelectNum1.getText().toString());
+            SelectBuilding = Integer.parseInt(SelectBuilding1.getText().toString());
 
             setClassmate();
         }else if(view.getId() == R.id.select_commit){
@@ -201,12 +203,15 @@ public class chooseroom extends Activity implements View.OnClickListener {
         bt_commit = (Button)findViewById(R.id.select_commit);
         top_home_IV = (ImageView)findViewById(R.id.usual_top_home);
         top_exit_IV = (ImageView)findViewById(R.id.usual_top_exit);
+
+        select_check=(Button)findViewById(R.id.select_check);
     }
     private void initLinstener() {
 
         bt_commit.setOnClickListener(this);
         top_home_IV.setOnClickListener(this);
         top_exit_IV.setOnClickListener(this);
+        select_check.setOnClickListener(this);
     }
     private void initData() {
         select_nameTv.setText("姓名："+sharedPreferences.getString("Name",null));

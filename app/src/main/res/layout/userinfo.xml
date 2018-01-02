@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/userinfo_top"
+        layout="@layout/head"/>
+    <RelativeLayout
+        android:id="@+id/userinfo_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/userinfo_top">
+
+        <TextView
+            android:id="@+id/userinfo_information_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓    名："
+            android:textSize="22.0sp"
+            android:layout_marginTop="2.0dp"
+            android:layout_marginLeft="20.0dip" />
+        <TextView
+            android:id="@+id/userinfo_information_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="学    号："
+            android:layout_below="@id/userinfo_information_name"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="性    别："
+            android:layout_below="@id/userinfo_information_id"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="年    级："
+            android:layout_below="@id/userinfo_information_sex"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="校    区："
+            android:layout_below="@id/userinfo_information_grade"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="校验码："
+            android:layout_below="@id/userinfo_information_location"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="楼    号："
+            android:layout_below="@id/userinfo_information_code"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="宿舍号："
+            android:layout_below="@id/userinfo_information_building"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/userinfo_information_seperate"
+            android:layout_width="25.0dp"
+            android:layout_height="1.0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userinfo_information_room"/>
+        <Button
+            android:id="@+id/userinfo_information_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择宿舍"
+            android:layout_below="@id/userinfo_information_room"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/userinfo_information_seperate"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/userinfo_information_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询空床"
+            android:layout_below="@id/userinfo_information_room"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/userinfo_information_seperate"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

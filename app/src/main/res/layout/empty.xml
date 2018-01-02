@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/userinfo_top"
+        layout="@layout/head"/>
+    <RelativeLayout
+        android:id="@+id/querybed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/userinfo_top">
+
+        <TextView
+            android:id="@+id/querybed_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5号楼空床数："
+            android:textSize="22.0sp"
+            android:layout_marginTop="2.0dp"
+            android:layout_marginLeft="20.0dip" />
+        <TextView
+            android:id="@+id/querybed_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8号楼空床数："
+            android:layout_below="@id/querybed_5"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/querybed_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9号楼空床数："
+            android:layout_below="@id/querybed_8"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/querybed_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13号楼空床数："
+            android:layout_below="@id/querybed_9"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <TextView
+            android:id="@+id/querybed_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14号楼空床数："
+            android:layout_below="@id/querybed_13"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="2.0dp"
+            android:textSize="22.0sp"/>
+        <Button
+            android:id="@+id/querybed_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始选宿舍"
+            android:layout_below="@id/querybed_14"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

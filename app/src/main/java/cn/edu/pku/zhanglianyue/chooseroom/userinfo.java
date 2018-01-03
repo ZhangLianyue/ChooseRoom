@@ -94,7 +94,7 @@ public class userinfo extends Activity implements View.OnClickListener {
                         userCodeTv.setText("校验码："+userinfo_Handler.getuCode());
                         userRoomTv = (TextView)findViewById(R.id.userinfo_information_room);
                         if(userinfo_Handler.getuRoom() == null){
-                            userRoomTv.setText("宿舍号：您还没有选择宿舍！");
+                            userRoomTv.setText("宿舍号：尚未选择宿舍");
                         }else{
                             //如果选择了宿舍，那么就把变量设置为已选择，并且存到sharepreferences中，另一个页面也可以获取
 
@@ -102,7 +102,7 @@ public class userinfo extends Activity implements View.OnClickListener {
                         }
                         userBuildingTv = (TextView)findViewById(R.id.userinfo_information_building);
                         if(userinfo_Handler.getuBuilding() == null){
-                            userBuildingTv.setText("楼    号：您还没有选择宿舍！");
+                            userBuildingTv.setText("楼    号：尚未选择宿舍");
                         }else{
                             userBuildingTv.setText("楼    号："+userinfo_Handler.getuBuilding());
                         }
@@ -110,7 +110,7 @@ public class userinfo extends Activity implements View.OnClickListener {
                         userLocationTv = (TextView)findViewById(R.id.userinfo_information_location);
                         userLocationTv.setText("校    区："+userinfo_Handler.getuLocation());
                         userGradeTv = (TextView)findViewById(R.id.userinfo_information_grade);
-                        userGradeTv.setText("性    别："+userinfo_Handler.getuGrade());
+                        userGradeTv.setText("年    级："+userinfo_Handler.getuGrade());
                         //将性别和名称存在sharedPreferences中
                         SharedPreferences sharedPreferences = getSharedPreferences("selectroom",MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();

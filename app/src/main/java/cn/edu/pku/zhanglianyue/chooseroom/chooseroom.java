@@ -87,8 +87,8 @@ public class chooseroom extends Activity implements View.OnClickListener {
                 switch (msg.what){
                     case 0:
                         Dialog alertDialog1 = new AlertDialog.Builder(chooseroom.this).
-                                setTitle("恭喜：").
-                                setMessage("选宿舍成功").
+                                setTitle("宿舍选择成功").
+                                setMessage(" ").
                                 setNegativeButton("确定", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
